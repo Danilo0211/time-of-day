@@ -68,12 +68,19 @@
         let myPic = "";
 
         //Testing only remove following LINE: 
-        myHour = 7;
+        myHour = 14;
 
         if(myHour >= 5 && myHour < 12) {
             mySentence = "Good Morning!";
             myColor = "Orange";
             myPic = "morning.jpg";
+        }
+
+         else if(myHour >= 12 && myHour < 18) {    
+             mySentence = "Good Afternoon!";
+            myColor = "Green";
+            myPic = "afternoon.jpg";
+
 
 
         } else {
@@ -89,7 +96,7 @@
         document.querySelector('html').style.backgroundColor = myColor;
         myPic = "images/" + myPic;
         console.log(myPic);
-        alert(myPic);
+        
 
         //change to our pic
         document.getElementById("time-pic").src = myPic;
